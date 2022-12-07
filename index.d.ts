@@ -1,5 +1,11 @@
-declare module 'html-to-docx-ts'
+declare module 'html-to-docx-dinnye'
 {
+    interface PageSize
+    {
+        width: number;
+        height: number;
+    }
+
     interface Margins
     {
         /**
@@ -65,7 +71,9 @@ declare module 'html-to-docx-ts'
          */
         orientation?: "portrait" | "landscape";
 
-        margins?: Margins
+        pageSize?: PageSize;
+
+        margins?: Margins;
 
         /**
          * title <?String> title of the document.
