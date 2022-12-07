@@ -1,5 +1,5 @@
 {
-  "name": "html-to-docx",
+  "name": "html-to-docx-dinnye",
   "version": "1.6.4",
   "description": "HTML to DOCX converter",
   "keywords": [
@@ -12,19 +12,21 @@
   ],
   "main": "dist/html-to-docx.umd.js",
   "module": "dist/html-to-docx.esm.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "npm run build && node example/example-node.js",
-    "prerelease": "rollup -c",
+    "prerelease": "rollup -c && npm run copy-dts",
     "release": "standard-version",
     "lint": "eslint --fix .",
     "prettier:check": "prettier --check '**/*.{js}'",
     "validate": "run-s lint prettier:check",
-    "build": "rollup -c",
-    "prepare": "husky install"
+    "build": "rollup -c && npm run copy-dts",
+    "prepare": "husky install",
+    "copy-dts": "copyfiles -u 1 \"src/**/*.d.ts\" dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/privateOmega/html-to-docx.git"
+    "url": "git+https://github.com/Dinnye/html-to-docx.git"
   },
   "author": "privateOmega <privateOmega@protonmail.com>",
   "contributors": [
@@ -48,12 +50,12 @@
     "@rollup/plugin-commonjs": "^12.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.1.1",
+    "copyfiles": "^2.4.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-prettier": "^4.0.0",
-    "husky": "^7.0.0",
     "lint-staged": "^11.1.2",
     "prettier": "^2.4.1",
     "rollup": "^2.62.0",
@@ -63,8 +65,8 @@
     "standard-version": "^9.3.1"
   },
   "dependencies": {
-    "@oozcitak/util": "8.3.4",
     "@oozcitak/dom": "1.15.6",
+    "@oozcitak/util": "8.3.4",
     "color-name": "^1.1.4",
     "escape-html": "^1.0.3",
     "html-to-vdom": "^0.7.0",
