@@ -1,6 +1,6 @@
 {
   "name": "html-to-docx-dinnye",
-  "version": "1.6.8",
+  "version": "1.8.0",
   "description": "HTML to DOCX converter",
   "keywords": [
     "html",
@@ -41,7 +41,11 @@
     "erenard",
     "KeithGillette",
     "juralio-james",
-    "nicolasiscoding <nicolascoding@gmail.com>"
+    "nicolasiscoding <nicolascoding@gmail.com>",
+    "zedtux <zedtux@zedroot.org>",
+    "hlerebours",
+    "hakjeri",
+    "tasola"
   ],
   "license": "MIT",
   "bugs": {
@@ -73,7 +77,7 @@
     "@oozcitak/dom": "1.15.6",
     "@oozcitak/util": "8.3.4",
     "color-name": "^1.1.4",
-    "escape-html": "^1.0.3",
+    "html-entities": "^2.3.3",
     "html-to-vdom": "^0.7.0",
     "image-size": "^1.0.0",
     "image-to-base64": "^2.2.0",

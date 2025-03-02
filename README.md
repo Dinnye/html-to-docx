@@ -76,6 +76,8 @@ full fledged examples can be found under `example/`
     - `restart` <"continuous"|"newPage"|"newSection"> numbering restart strategy. Defaults to `continuous`.
   - `numbering` <?[Object]>
     - `defaultOrderedListStyleType` <?[String]> default ordered list style type. Defaults to `decimal`.
+  - `decodeUnicode` <?[Boolean]> flag to enable unicode decoding of header, body and footer. Defaults to `false`.
+  - `lang` <?[String]> language localization code for spell checker to work properly. Defaults to `en-US`.
 - `footerHTMLString` <[String]> clean html string equivalent of footer. Defaults to `<p></p>` if footer flag is `true`.
 
 ### Returns
@@ -86,7 +88,6 @@ full fledged examples can be found under `example/`
 
 Currently page break can be implemented by having div with classname "page-break" or style "page-break-after" despite the values of the "page-break-after", and contents inside the div element will be ignored. `<div class="page-break" style="page-break-after: always;"></div>`
 
-<br>
 
 CSS list-style-type for `<ol>` element are now supported. Just do something like this in the HTML:
 ```
@@ -109,11 +110,22 @@ Also you could add attribute `data-start="n"` to start the numbering from the n-
 
 `<ol data-start="2">` will start the numbering from ( B. b. II. ii. 2. )
 
+
+Font family doesnt work consistently for all word processor softwares
+
+- Word Desktop work as intended
+- LibreOffice ignores the fontTable.xml file, and finds a font by itself
+- Word Online ignores the fontTable.xml file, and finds closest font in their font library
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to branch new branches off of develop for contribution.
+
+## Support
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/privateOmega)
 
 ## License
 
@@ -138,3 +150,11 @@ MIT
 [cm]: https://en.wikipedia.org/wiki/Centimetre "cm"
 [inch]: https://en.wikipedia.org/wiki/Inch "inch"
 [pt]: https://en.wikipedia.org/wiki/Point_(typography) "pt"
+
+## Contributors
+
+<a href="https://github.com/privateomega/html-to-docx/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=privateomega/html-to-docx" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).

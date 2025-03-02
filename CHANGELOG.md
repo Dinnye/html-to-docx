@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/privateOmega/html-to-docx/compare/v1.7.0...v1.8.0) (2023-03-26)
+
+
+### Features
+
+* adds lang variable to the styles ([1102a5b](https://github.com/privateOmega/html-to-docx/commit/1102a5bd707bd7130ef047f33f94d0b665d6a82c))
+* **font-family:** use the first element as the font name ([d62ecdc](https://github.com/privateOmega/html-to-docx/commit/d62ecdcf3d887bc23aa7c8e3f916db7444a48d96))
+* **font:** register fonts in fontTable.xml ([013938e](https://github.com/privateOmega/html-to-docx/commit/013938ef0c46bcac5aa24c8b659763cdf916066b))
+
+
+### Bug Fixes
+
+* skip head tag from processing ([a3eedbc](https://github.com/privateOmega/html-to-docx/commit/a3eedbc375af33891bb4b474c4b957c825e96b1a))
+
+## [1.7.0](https://github.com/privateOmega/html-to-docx/compare/v1.6.5...v1.7.0) (2023-03-19)
+
+
+### Bug Fixes
+
+* add option to decode unicode in order to prevent crash ([95d3419](https://github.com/privateOmega/html-to-docx/commit/95d3419fa9d5590deb9541f28dda813843592562))
+* support plain text ([7b2ca06](https://github.com/privateOmega/html-to-docx/commit/7b2ca06c9ded9450d84cad5305a19c87d166daf3))
+* use image alt as description for images ([46d1fb8](https://github.com/privateOmega/html-to-docx/commit/46d1fb8bead9ebb6f47a131c20247c316d638e6d))
+* use image alt as description for images in paragraphs ([4d4da94](https://github.com/privateOmega/html-to-docx/commit/4d4da9457c74820bee0acd03f2dc1459bc2fa1e4))
+
+### [1.6.5](https://github.com/privateOmega/html-to-docx/compare/v1.6.4...v1.6.5) (2023-01-17)
+
 ### [1.6.4](https://github.com/privateOmega/html-to-docx/compare/v1.6.3...v1.6.4) (2022-11-18)
 
 
